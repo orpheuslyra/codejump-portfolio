@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+import InstagramLink from "./InstagramLink.astro";
+---
+
+<nav class="nav-links">
+  <a href="">About</a>
+  <a href="">Work</a>
+  <a href="">News</a>
+  <a href="">Contact</a>
+  <InstagramLink />
+</nav>
+<style>
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .nav-links a:visited {
+    color: #000000;
+  }
+</style>

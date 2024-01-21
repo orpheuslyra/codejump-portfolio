@@ -1,0 +1,31 @@
+---
+const { contentTitle } = Astro.props;
+import { Image } from "astro:assets";
+import photoWork1 from "../../public/image/works1.jpg";
+import photoWork2 from "../../public/image/works2.jpg";
+import photoWork3 from "../../public/image/works3.jpg";
+import photoWork4 from "../../public/image/works4.jpg";
+import photoWork5 from "../../public/image/works5.jpg";
+import photoWork6 from "../../public/image/works6.jpg";
+---
+
+<div class="wrapper">
+  <h1>{contentTitle}</h1>
+  <div class="gridPhotoContent">
+    <Image src={photoWork1} alt="" />
+    <Image src={photoWork2} alt="" />
+    <Image src={photoWork3} alt="" />
+    <Image src={photoWork4} alt="" />
+    <Image src={photoWork5} alt="" />
+    <Image src={photoWork6} alt="" />
+  </div>
+</div>
+
+<style>
+  .gridPhotoContent {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    row-gap: 5px;
+    column-gap: 20px;
+  }
+</style>

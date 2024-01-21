@@ -1,0 +1,12 @@
+html {
+    font-family: 'Meiryo';
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 230px;
+}

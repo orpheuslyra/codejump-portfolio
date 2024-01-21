@@ -1,0 +1,35 @@
+---
+import type { Code } from "astro:components";
+
+const { managerName } = Astro.props;
+const { contentTitle } = Astro.props;
+const { address } = Astro.props;
+const { telephone } = Astro.props;
+const { url } = Astro.props;
+const { mail } = Astro.props;
+const { profile } = Astro.props;
+---
+
+<div class="wrapper">
+  <h1 class="contentTitle">{contentTitle}</h1>
+
+  <div>{managerName}</div>
+  <ul class="information">
+    <li>Address: {address}</li>
+    <li>tel: {telephone}</li>
+    <li>url: {url}</li>
+    <li>mail: {mail}</li>
+  </ul>
+  <div>{profile}</div>
+</div>
+
+<style>
+  .contentTitle {
+    text-align: center;
+  }
+
+  .information {
+    list-style: none;
+    padding: 0;
+  }
+</style>

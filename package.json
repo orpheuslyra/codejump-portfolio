@@ -10,6 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.9.4",
     "astro": "^4.1.1"
+  },
+  "devDependencies": {
+    "sass": "^1.69.7"
   }
 }

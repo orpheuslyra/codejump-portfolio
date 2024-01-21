@@ -1,0 +1,16 @@
+---
+const { imageUrl } = Astro.props;
+const { altText } = Astro.props;
+---
+
+<div id="mainVisual">
+  <img class="keyVisual" src={imageUrl} alt={altText} />
+</div>
+<style>
+  .keyVisual {
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover;
+  }
+</style>
